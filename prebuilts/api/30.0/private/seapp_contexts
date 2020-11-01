@@ -159,6 +159,7 @@ user=_app seinfo=media domain=mediaprovider name=android.process.media type=app_
 user=_app seinfo=platform domain=platform_app type=app_data_file levelFrom=user
 user=_app seinfo=base isEphemeralApp=true domain=ephemeral_app type=app_data_file levelFrom=all
 user=_app isEphemeralApp=true domain=ephemeral_app type=app_data_file levelFrom=all
+user=_app seinfo=platform domain=flipendo name=com.google.android.flipendo type=app_data_file levelFrom=all
 user=_app seinfo=base isPrivApp=true domain=priv_app type=privapp_data_file levelFrom=user
 user=_app isPrivApp=true domain=priv_app type=privapp_data_file levelFrom=user
 user=_app seinfo=base isPrivApp=true name=com.google.android.permissioncontroller domain=permissioncontroller_app type=privapp_data_file levelFrom=all
