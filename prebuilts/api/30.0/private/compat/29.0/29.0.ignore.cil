@@ -1,4 +1,4 @@
-;; new_objects - a collection of types that have been introduced that have no
+ ;; new_objects - a collection of types that have been introduced that have no
 ;;   analogue in older policy.  Thus, we do not need to map these types to
 ;;   previous ones.  Add here to pass checkapi tests.
 (type new_objects)
@@ -90,6 +90,7 @@
     ota_prop
     prereboot_data_file
     proc_locks
+    proc_dt_firmware_android
     art_apex_dir
     rebootescrow_hal_prop
     securityfs
