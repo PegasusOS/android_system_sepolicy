@@ -5,3 +5,6 @@ init_daemon_domain(update_engine);
 # Allow to talk to gsid.
 allow update_engine gsi_service:service_manager find;
 binder_call(update_engine, gsid)
+
+# Allow to install OTA's from local storage
+allow update_engine media_rw_data_file:file { open read getattr };

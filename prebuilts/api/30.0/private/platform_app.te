@@ -27,6 +27,10 @@ allow platform_app asec_apk_file:file create_file_perms;
 allow platform_app media_rw_data_file:dir create_dir_perms;
 allow platform_app media_rw_data_file:file create_file_perms;
 
+# Updater Ota package file
+allow platform_app ota_package_file:file create_file_perms;
+allow platform_app ota_package_file:dir rw_dir_perms;
+
 # Write to /cache.
 allow platform_app cache_file:dir create_dir_perms;
 allow platform_app cache_file:file create_file_perms;
