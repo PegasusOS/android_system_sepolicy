@@ -171,8 +171,8 @@ user=_app isPrivApp=true name=com.google.android.providers.media.module domain=m
 user=_app seinfo=platform isPrivApp=true name=com.android.permissioncontroller domain=permissioncontroller_app type=privapp_data_file levelFrom=all
 user=_app seinfo=base isPrivApp=true name=com.android.vzwomatrigger domain=vzwomatrigger_app type=privapp_data_file levelFrom=all
 user=_app isPrivApp=true name=com.android.vzwomatrigger domain=vzwomatrigger_app type=privapp_data_file levelFrom=all
-user=_app seinfo=base isPrivApp=true name=org.lineageos.updater domain=updater_app type=app_data_file levelFrom=user
-user=_app isPrivApp=true name=org.lineageos.updater domain=updater_app type=app_data_file levelFrom=user
+user=_app seinfo=base isPrivApp=true name=com.android.updater domain=updater_app type=app_data_file levelFrom=user
+user=_app isPrivApp=true name=com.android.updater domain=updater_app type=app_data_file levelFrom=user
 user=_app seinfo=platform isPrivApp=true name=com.android.gallery3d domain=gallery_app type=app_data_file levelFrom=user
 user=_app isPrivApp=true name=com.android.gallery3d domain=gallery_app type=app_data_file levelFrom=user
 user=_app seinfo=base minTargetSdkVersion=30 domain=untrusted_base_app type=app_data_file levelFrom=all
