@@ -73,9 +73,11 @@ allow platform_app system_api_service:service_manager find;
 allow platform_app vr_manager_service:service_manager find;
 allow platform_app gpu_service:service_manager find;
 allow platform_app stats_service:service_manager find;
+allow platform_app update_engine_service:service_manager find;
 
 # Allow platform apps to interact with gpuservice
 binder_call(platform_app, gpuservice)
+binder_call(platform_app, update_engine)
 
 # Allow platform apps to log via statsd.
 binder_call(platform_app, statsd)
