@@ -27,10 +27,6 @@ allow platform_app asec_apk_file:file create_file_perms;
 allow platform_app media_rw_data_file:dir create_dir_perms;
 allow platform_app media_rw_data_file:file create_file_perms;
 
-# Updater Ota package file
-allow platform_app ota_package_file:file create_file_perms;
-allow platform_app ota_package_file:dir rw_dir_perms;
-
 # Write to /cache.
 allow platform_app cache_file:dir create_dir_perms;
 allow platform_app cache_file:file create_file_perms;
@@ -73,11 +69,9 @@ allow platform_app system_api_service:service_manager find;
 allow platform_app vr_manager_service:service_manager find;
 allow platform_app gpu_service:service_manager find;
 allow platform_app stats_service:service_manager find;
-allow platform_app update_engine_service:service_manager find;
 
 # Allow platform apps to interact with gpuservice
 binder_call(platform_app, gpuservice)
-binder_call(platform_app, update_engine)
 
 # Allow platform apps to log via statsd.
 binder_call(platform_app, statsd)
