@@ -104,6 +104,9 @@ security.deny_new_usb   u:object_r:system_prop:s0
 # Fastbootd protocol control property
 fastbootd.protocol    u:object_r:fastbootd_protocol_prop:s0 exact enum usb tcp
 
+# adbd protoctl configuration property
+service.adb.tcp.port    u:object_r:adbd_config_prop:s0 exact int
+
 # Boolean property set by system server upon boot indicating
 # if device is fully owned by organization instead of being
 # a personal device.

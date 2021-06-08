@@ -14,6 +14,10 @@ bluetooth_domain(priv_app)
 # Used by: https://play.privileged.com/store/apps/details?id=jackpal.androidterm
 create_pty(priv_app)
 
+# Chrome Crashpad uses the the dynamic linker to load native executables
+# from an APK (b/112050209, crbug.com/928422)
+allow priv_app system_linker_exec:file execute_no_trans;
+
 allow priv_app privapp_data_file:lnk_file create_file_perms;
 
 # Priv apps can find services that expose both @SystemAPI and normal APIs.
